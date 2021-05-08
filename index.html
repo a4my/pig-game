@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="">
+    <link rel="icon" type="image/png" href="images/side-6.png">
     <title>Pig Game</title>
   </head>
   <body>
@@ -27,11 +27,30 @@
         </div>
       </section>
 
-      <img src="dice-5.png" alt="Playing dice" class="dice" />
+      <img src="images/side-1.png" alt="Playing dice" class="dice" />
       <button class="btn btn--new">🔄 New game</button>
       <button class="btn btn--roll">🎲 Roll dice</button>
-      <button class="btn btn--hold">📥 Hold</button>
+      <button class="btn btn--hold">✋ Hold</button>
     </main>
+
+    <button class="show-modal">❔ Rules</button>
+
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1>How to play the game:</h1>
+      <p>🎲 Roll the dice</p>
+      <p>✋ Hold the current value to add it to your score</p>
+      <p>💥 Or roll the dice again if you feel lucky and want to increase your current value</p>
+      <p>❗ If you roll a 1 you will lose your current value</p>
+      <p>🏆 First player to score 200 wins</p>
+      <h1>Tips</h1>
+      <p>🎲Press ENTER to roll the dice</p>
+      <p>✋Press SPACE to hold your current value</p>
+      <p>🔁Press TAB to play a new game</p>
+    </div>
+
+    <div class="overlay hidden"></div>
+
     <script src="script.js"></script>
   </body>
 </html>
